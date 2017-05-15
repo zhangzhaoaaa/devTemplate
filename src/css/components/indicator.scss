@@ -1,0 +1,16 @@
+/* 加载效果indicator */
+.indicator{
+	width: 114px;
+	height: 114px;
+	margin: 0 auto;
+	color: #fff;
+	background: url(../../../imgs/public/loading.gif) no-repeat;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-position: 50% 15px;
+	border-radius: 10px;
+	text-align: center;
+	span{
+		display: inline-block;
+		margin-top: 78px;
+	}
+}

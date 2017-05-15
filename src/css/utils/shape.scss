@@ -1,0 +1,24 @@
+@mixin square($size) {
+	height: $size;
+	width: $size;
+}
+
+@mixin circle($size) {
+	width: $size;
+	height: $size;
+	border-radius: 100%;
+	float: left;
+}
+@mixin sprite($image, $x, $y, $w, $h) {
+	background: $image no-repeat;
+	background-position: $x $y;
+	height: $h;
+	width: $w;
+}
+@mixin contentCenter($box-height, $content-height) {
+	padding-top: #{($box-height - $content-height) / 2};
+}
+
+@mixin contentCenterM($box-height, $content-height) {
+	margin-top: #{($box-height - $content-height) / 2};
+}

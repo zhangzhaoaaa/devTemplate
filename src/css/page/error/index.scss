@@ -1,0 +1,26 @@
+/* error */
+@import "../../base/public.scss";
+
+.error{
+    text-align: center;
+    color: #808080;
+    font-size: 20px;
+    padding-bottom: 200px;
+    background: url(../../../imgs/public/error.jpg) no-repeat center 166px;
+    p{
+        padding: 435px 0 27px;
+    }
+    a{
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        width: 120px;
+        background: #505050;
+        color: #fff;
+        border-radius: 2px;
+        font-size: 16px;
+        &:hover{
+            background: #292929;
+        }
+    }
+}

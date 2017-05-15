@@ -1,0 +1,63 @@
+@import "../components/_app.scss"; // 工具函数
+.btn {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #505050;
+    font-size: 14px;
+    width: 84px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 3px;
+    &:hover{
+        background: #292929;
+    }
+}
+
+.btn.btn-login {
+    background-color: #ea362f;
+    width: 72px;
+    height: 32px;
+    line-height: 32px;
+    &:hover{
+        background: #d12f2a;
+    }
+}
+.btn.btn-look {
+    background-color: #fff;
+    width: 114px;
+    height: 30px;
+    line-height: 30px;
+    color: #292929;
+    border: 1px solid #292929;
+    &:hover{
+        background: #292929;
+        color: #fff;
+    }
+}
+.btn.disabled{
+    background-color: #808080;
+    cursor: no-drop;
+}
+.btn + .btn{
+    margin-left: rem(30px);
+}
+
+.btn.btn-more {
+    width: 600px;
+    height: 60px;
+    line-height: 60px;
+    background: transparent;
+    color: #808080;
+    font-size: 16px;
+    cursor: default;
+    &.active{
+        background: #f1f3f4;
+        color: #505050;
+        &:hover{
+            background: #d6d9de;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,230 @@
+@import "../../base/public.scss";
+@import '../../components/button.scss';
+
+//Start
+
+$color80: #808080;
+$color20: #202020;
+.comments{
+    background: #fff;
+}
+.cmt-module {
+    background: #fff;
+    position: relative;
+    width: 895px;
+}
+
+.cmt-title {
+    line-height: 38px;
+    font-size: 30px;
+    color: #333333;
+}
+.cmt-inputtips{
+    color: #808080;
+    font-size: 16px;
+    margin: 30px 0;
+    text-align: center;
+    display: none;
+}
+.cmt-count {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+.cmt-inputarea {
+    width: 895px;
+}
+.cmt-user-action {
+    border-bottom: 1px solid #dfdfdf;
+    width: 895px;
+}
+.cmt-user-icon {
+    float: left;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    background-size: 64px;
+    background-image: url("../../../imgs/comment/default-face.png");
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 35px;
+    }
+}
+.cmt-btn {
+    float: right;
+    .btn{
+        width: 86px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 18px;
+        background: #ec392b;
+        &:hover{
+            background: #c52b1f;
+        }
+    }
+}
+.cmt-user{
+    background: #f8f8f8;
+    padding: 10px;
+}
+.cmt-login-icon {
+    height: 36px;
+    img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    span{
+        padding-left: 8px;
+        color: #376492;
+    }
+}
+.cmt-gray {
+    color: $color80;
+}
+.cmt-red {
+    color: #ea362f;
+}
+.cmt-black {
+    color: $color20;
+}
+.cmt-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.cmt-user-form {
+    margin-left: 50px;
+}
+.cmt-wordnumber {
+    position: absolute;
+    bottom: 11px;
+    right: 11px;
+}
+.cmt-textarea {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 120px;
+    textarea {
+        overflow: hidden;
+        float: left;
+        width: 862px;
+        outline: none;
+        border: 1px solid #d9d9d9;
+        padding: 20px 15px;
+        color: #464646;
+        resize: none;
+        height: 89px;
+        font-size: 14px;
+        line-height: 18px;
+        &:hover{
+            border-color: #808080;
+        }
+        &:focus {
+            border-color: #4285f4;
+            background-color: #ffffff;
+        }
+    }
+}
+.cmt-word-count {
+    font-size: 28px;
+    padding: 0 5px;
+    color: #999;
+}
+
+.cmt-error {
+    position: absolute;
+    width: 160px;
+    padding: 12px;
+    line-height: 16px;
+    text-align: center;
+    bottom: 49px;
+    right: 26px;
+    background-color: #fffb9d;
+    border: 1px solid #feb554;
+    color: #feb554;
+}
+.cmt-a1 {
+    width: 0;
+    height: 0;
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: #fffb9d transparent  transparent;/* 红 透明 透明*/
+    position: absolute;
+    right: 22px;
+    top: 40px;
+    z-index: 15;
+}
+.cmt-a2 {
+    width: 0;
+    height: 0;
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: #feb554 transparent  transparent;/* 红 透明 透明*/
+    position: absolute;
+    right: 22px;
+    top: 41px;
+    z-index: 10;
+}
+.cmt-body {
+    margin: 0 0 0 75px;
+}
+.cmt-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.cmt-username {
+    height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    /*line-height: 1;*/
+    color: #5279a1;
+}
+.cmt-action-btn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    white-space: nowrap;
+    text-align: right;
+}
+.cmt-time {
+    /*height: 50px;*/
+    padding-left: 5px;
+    font-size: 12px;
+    color: $color80;
+    overflow: hidden;
+}
+.cmt-time:after {
+    content: attr(data-count);
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.cmt-content {
+    font-size: 14px;
+    line-height: 21px;
+    word-break:break-all; /*支持IE，chrome，FF不支持*/
+    word-wrap:break-word;/*支持IE，chrome，FF*/
+    color: #505050;
+}
+.cmt-empty {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    padding: 40px 0;
+    background: #e8edf3;
+    height: 106px;
+    color: $color80;
+}
+.cmt-form-action {
+    margin-top: 35px;
+    .btn {
+        float: right;
+        position: relative;
+        top: -15px;
+        margin-left: 30px;
+    }
+}

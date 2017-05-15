@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GomePlus视频频道</title>
+	<meta name="keywords" content="GomePlus视频频道" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="x5-page-mode" content="no-title"/>
+	<link rel="stylesheet" type="text/css" href="<%=cdnenv%>dist/css/comment.css">
+	<script type="text/javascript">
+        var $CONFIG = {
+            userId: 1, //用户id，为0标识未登录
+            nickName: "zeromike",
+            avatar: "http://gfs1.atguat.net.cn/T1RRLTB7WT1RCvBVdK.jpeg",
+        };
+	</script>
+
+	<script type="text/javascript">
+
+        // cms
+        $CONFIG['domain-data'] = 'http://m.v.dev.gomeplus.com/';
+
+        // php
+        $CONFIG['domain-user'] = 'http://api.be.v.dev.gomeplus.com';
+
+	</script>
+</head>
+<body>
+	<%- include('../../common/head.ejs')%>
+		<div id="wrap"></div>
+		<!--<div class="cmt-module">
+			<div class="cmt-head"><div class="cmt-title">评论 <span class="cmt-count">(12条评论)</span></div></div>
+
+			<div data-id="inputArea" class="cmt-inputarea">
+				<div class="cmt-form">
+					<div class="cmt-textarea" data-id="inputComment" style="position: relative">
+						<textarea data-id="txtComment" class="cmt-textarea" placeholder="我来说两句..."></textarea>
+						<div data-id="wordNumberArea" class="cmt-wordnumber" style="">
+							<span data-id="limitNum" class="">0
+							</span><span class="cmt-gray"> / 300</span>
+						</div>
+						<div class="cmt-error">最多输入300个文字哦
+							<div class="cmt-a1"></div>
+							<div class="cmt-a2"></div>
+						</div>
+					</div>
+					<div class="cmt-login-icon">
+						<a href="javascript: void 0;">
+							<img src="http://gfs13.atguat.net.cn/T1WFDTByKT1RCvBVdK.png">
+						</a>
+					</div>
+
+					<div style="clear: both"></div>
+					<div class="cmt-btn">
+						<a href="javascript:void 0" style="width:84px;height: 40px;" class="btn okBtn cmt-black disabled">发送</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="comments" data-id="comments" id="commentsList">
+					<div class="cmt-item clearfix">
+						<div class="cmt-user-icon">
+							<a href="javascript: void 0;">
+								<img src="http://gfs13.atguat.net.cn/T1WFDTByKT1RCvBVdK.png">
+							</a>
+						</div>
+						<div class="cmt-body">
+							<div class="cmt-action">
+								<span class="cmt-username">nickname</span>
+								<div class="cmt-action-btn">
+									<div class="cmt-time" data-count="时间"></div>
+								</div>
+							</div>
+							<div class="cmt-content">看两节课了健康六角恐龙
+							</div>
+						</div>
+					</div>
+					<div class="cmt-item clearfix">
+						<div class="cmt-user-icon">
+							<a href="javascript: void 0;">
+								<img src="http://gfs13.atguat.net.cn/T1WFDTByKT1RCvBVdK.png">
+							</a>
+						</div>
+						<div class="cmt-body">
+							<div class="cmt-action">
+								<span class="cmt-username">nickname</span>
+								<div class="cmt-action-btn">
+									<div class="cmt-time" data-count="时间"></div>
+								</div>
+							</div>
+							<div class="cmt-content">看两节课了健康六角恐龙
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	<%- include('../../common/footer.ejs')%>
+	<script src="<%=cdnenv%>dist/js/vendor.js"></script>
+	<script src="<%=cdnenv%>dist/js/comment.js"></script>
+</body>
+</html>

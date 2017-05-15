@@ -1,0 +1,65 @@
+
+//px转rem
+//width:rem(100) or width:rem(100px)
+@function rem($values) {
+    @if length($values) == 1 {
+        @return px-to-rem(nth($values,1))
+    }
+    @else if length($values) == 2 {
+        @return px-to-rem(nth($values,1)) px-to-rem(nth($values,2));
+    }
+    @else if length($values) == 3 {
+        @return px-to-rem(nth($values,1)) px-to-rem(nth($values,2)) px-to-rem(nth($values,3));
+    }
+    @else if length($values) == 4 {
+        @return px-to-rem(nth($values,1)) px-to-rem(nth($values,2)) px-to-rem(nth($values,3)) px-to-rem(nth($values,4));
+    }
+}
+@function rm-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+@function px-to-rem($values,$browser-base-num:100) {
+    @return (rm-unit($values)/rm-unit($browser-base-num))*1rem;
+}
+
+//单行，多行截取
+//单行@include ellipsis(1)，多行@include ellipsis(2); 
+@mixin ellipsis($line:2) {
+    @if $line == 1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        empty-cells: show;
+        @content;
+    }
+    @else {
+        overflow: hidden;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+        @content;
+    }
+}
+
+//自动补前缀
+//@include prefix(border-radius,50%,webkit moz ms o);
+@mixin prefix($key,$val,$prefixes:webkit) {
+    @each $prefix in $prefixes {
+        @if $prefix == webkit {
+            -webkit-#{$key}: $val;
+        }
+        @else if $prefix == moz {
+            -moz-#{$key}: $val;
+        }
+        @else if $prefix == ms {
+            -ms-#{$key}: $val;
+        }
+        @else if $prefix == o {
+            -o-#{$key}: $val;
+        }
+        @else if $prefix == none {
+            }
+    }
+    #{$key}: $val;
+}

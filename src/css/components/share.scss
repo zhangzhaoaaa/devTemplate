@@ -1,0 +1,181 @@
+
+.Pub-Share{
+	height: 30px;
+	line-height: 30px;
+	.share-title{
+		font-size:16px;
+		float: left;
+		display: inline;
+	}
+	> a{
+		width: 30px;
+		height: 30px;
+		line-height:30px;
+		text-align:center;
+		text-decoration:none;
+		font-size:16px;
+		float:left;
+		display:inline-block;
+		overflow: hidden;
+		border-radius: 50%;
+		margin:0 5px;
+		color: #FFF;
+		cursor: pointer;
+		transition: all .3s;
+		> em{display:block;}
+	}
+	.qq{background:#5ed5e0;}
+	.qq:hover{background:#58c7d1;}
+	.wx{background:#63cf5b;}
+	.wx:hover{background:#5bbf54;}
+	.wb{background:#f95353;}
+	.wb:hover{background:#e64c4c;}
+	.qz{background:#ffc600;}
+	.qz:hover{background:#ebb800;}
+
+	.smore{
+		width:30px;
+		height:30px;
+		float:left;
+		display:inline;
+		position: relative;
+		color: #333;
+		z-index:9;
+		> span{
+			display:block;
+			width:30px;
+			height:30px;
+			text-align:center;
+			font-size:18px;
+			font-weight:bold;
+			transition: transform .3s;
+			cursor: pointer;
+		}
+		&:hover{
+			color: #F30;
+			> span{
+				color: #F30;
+				transform: rotate(180deg);
+			}
+			.smorebox{
+				display: block;
+			}
+		}
+	}
+
+	.smorebox{
+		position: absolute;
+		left: -160px;
+		top:28px;
+		padding-top: 10px;
+		display: none;
+		.uparrow{
+			width:14px;
+			color: #FFF;
+			text-shadow: 0 -5px 5px rgba(0,0,0,.1);
+			position: absolute;
+			top:0;
+			left:167px;
+			font: normal bold 14px/14px 'SimSun';
+		}
+	}
+	.copyurl{
+		width: 320px;
+		padding: 10px;
+		padding-bottom:0;
+		box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+		background:#FFF;
+		overflow: hidden;
+		li{
+			list-style:none;
+			display:flex;
+			justify-content:space-between;
+			border:1px solid #EEE;
+			overflow: hidden;
+			margin-bottom:10px;
+		}
+	}
+	.input{
+		flex: 1;
+		height: 30px;
+		padding: 0 5px;
+		border: none;
+		background: #f3f3f3;
+		font-size:14px;
+		color: #444;
+		outline: none;
+	}
+	.copybtn{
+		width: 110px;
+		height: 30px;
+		border: none;
+		line-height: 30px;
+		text-align: center;
+		font-size:14px;
+		outline: none;
+		transition: all .3s;
+		&:hover{
+			background:#292929;
+			color: #FFF;
+			cursor: pointer;
+		}
+	}
+	.shareCopyTips{
+		position: absolute;
+		left: 20px;
+		padding: 4px 20px;
+		border-radius: 5px;
+		background: rgba(0,0,0,.7);
+		color: #FFF;
+		font-size:14px;
+		display: none;
+	}
+}
+.shareWeixinPop {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right:0;
+	bottom:0;
+	z-index: 999;
+	background:rgba(0,0,0,.3);
+	.wx-main{
+		width: 370px;
+		height: 370px;
+		padding: 15px;
+		border: 1px solid #CCC;
+		border-radius: 5px;
+		background-color: #fff;
+		text-align: center;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin: -200px 0 0 -200px;
+		z-index: 99;
+		p{
+			font: 12px/30px "Microsoft YaHei";
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.wx-code{
+		width:100%;
+		height: 300px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		padding-top: 30px;
+	}
+	.wx-close{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		font: 30px/30px 'SimSun';
+		text-align: center;
+		line-height: 30px;
+		text-decoration: none;
+		color: #e60039;
+	}
+}

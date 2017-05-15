@@ -1,0 +1,11 @@
+@mixin fixed($p) {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	@if $p==top {
+		top: 0;
+	}
+	@if $p==bottom {
+		bottom: 0;
+	}
+}

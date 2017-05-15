@@ -1,0 +1,40 @@
+@mixin multiline-overflow($line) {
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: #{$line};
+	-webkit-box-orient: vertical;
+}
+@mixin divcenter($h) {
+	height: $h;
+	line-height: $h;
+}
+@mixin fontSize($size){
+	[data-dpr="2"] & {
+        font-size: ($size * 2.5 / 2) * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        font-size: ($size * 2.5 / 2) * 1px;
+    }
+
+	[data-dpr="2.625"] & {
+        font-size: ($size * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        font-size: ($size * 2.75 / 2) * 1px;
+    }
+
+    [data-dpr="3"] & {
+        font-size: ($size / 3 * 2) * 1px
+    }
+
+	[data-dpr="3.5"] & {
+        font-size: ($size / 3.5 * 2) * 1px
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        font-size: $size * 2px;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin gap($w) {
+	border-bottom: $w solid $bgcolor;
+}
+
+@mixin bb($w,$c) {
+	border-bottom: $w solid $c;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+  box-shadow:$shadow;
+}

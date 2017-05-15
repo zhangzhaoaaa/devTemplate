@@ -1,0 +1,26 @@
+/* icon */
+@import "../../base/public.scss";
+
+
+.list{
+    [class^="icon-"], [class*=" icon-"]{
+        display: block;
+        font-size: 30px;
+        
+    }
+    .mls{
+        display: block;
+        padding: 10px 0;
+    }
+    .glyph{
+        float: left;
+        width: 150px;
+        background: #fff;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .hidden-true,.unitRight{
+        display: none;
+    }
+}

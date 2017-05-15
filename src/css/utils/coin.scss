@@ -1,0 +1,10 @@
+@mixin rmb(){
+	content: '¥';
+}
+
+@mixin rmb2() {
+	&:before {
+		content: '¥';
+		margin-right: 5px;
+	}
+}

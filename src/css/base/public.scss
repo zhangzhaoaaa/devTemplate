@@ -1,0 +1,217 @@
+@import "reset";
+@import "../components/_app.scss";
+body{
+    min-height: calc(100vh - 202px);
+}
+body {
+    color: #202020;
+    background: #fff;
+    min-width: 1200px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.back-top{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 123px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight:bold;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background: rgba(41,41,41,.1);
+    border-radius: 4px;
+    z-index: 999;
+    cursor: pointer;
+    &:hover{
+      background: rgba(41,41,41,.3);
+    }
+} 
+
+//icon图标
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../../fonts/icomoon.eot');
+  src:  url('../../../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../../../fonts/icomoon.ttf') format('truetype'),
+    url('../../../fonts/icomoon.woff') format('woff'),
+    url('../../../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1:before {
+  content: "\e900";
+}
+.icon-2:before {
+  content: "\e901";
+}
+.icon-3:before {
+  content: "\e905";
+}
+.icon-4:before {
+  content: "\e907";
+}
+.icon-5:before {
+  content: "\e90d";
+}
+.icon-6:before {
+  content: "\e916";
+}
+.icon-7:before {
+  content: "\e917";
+}
+.icon-8:before {
+  content: "\e918";
+}
+.icon-9:before {
+  content: "\e919";
+}
+.icon-10:before {
+  content: "\e91a";
+}
+.icon-11:before {
+  content: "\e91b";
+}
+.icon-12:before {
+  content: "\e91c";
+}
+.icon-13:before {
+  content: "\e90f";
+}
+.icon-14:before {
+  content: "\e91d";
+}
+.icon-15:before {
+  content: "\e91e";
+}
+.icon-16:before {
+  content: "\e91f";
+}
+.icon-17:before {
+  content: "\e920";
+}
+.icon-18:before {
+  content: "\e909";
+}
+.icon-19:before {
+  content: "\e90c";
+}
+.icon-20:before {
+  content: "\e912";
+}
+.icon-21:before {
+  content: "\e913";
+}
+.icon-22:before {
+  content: "\e921";
+}
+.icon-23:before {
+  content: "\e922";
+}
+.icon-24:before {
+  content: "\e923";
+}
+.icon-25:before {
+  content: "\e924";
+}
+.icon-26:before {
+  content: "\e925";
+}
+.icon-27:before {
+  content: "\e926";
+}
+.icon-28:before {
+  content: "\e927";
+}
+.icon-29:before {
+  content: "\e928";
+}
+.icon-30:before {
+  content: "\e929";
+}
+.icon-31:before {
+  content: "\e92a";
+}
+.icon-32:before {
+  content: "\e92b";
+}
+.icon-33:before {
+  content: "\e92c";
+}
+.icon-34:before {
+  content: "\e92d";
+}
+.icon-35:before {
+  content: "\e902";
+}
+.icon-36:before {
+  content: "\e903";
+}
+.icon-37:before {
+  content: "\e904";
+}
+.icon-38:before {
+  content: "\e906";
+}
+.icon-39:before {
+  content: "\e908";
+}
+.icon-40:before {
+  content: "\e90a";
+}
+.icon-41:before {
+  content: "\e90e";
+}
+.icon-42:before {
+  content: "\e90b";
+}
+.icon-43:before {
+  content: "\e910";
+}
+.icon-44:before {
+  content: "\e911";
+}
+.icon-45:before {
+  content: "\e914";
+}
+.icon-46:before {
+  content: "\e915";
+}
