@@ -3,7 +3,7 @@
 return '{
     "comment": {
         "css": [
-            "http://js.pre.meixincdn.com/CDN8152/dist/css/comment-912efc3.css"
+            "http://js.pre.meixincdn.com/CDN8152/dist/css/comment-8ba4fc5.css"
         ],
         "js": [
             "http://js.pre.meixincdn.com/CDN8152/dist/js/vendor-26c6415.js",
@@ -12,7 +12,7 @@ return '{
     },
     "index": {
         "css": [
-            "http://js.pre.meixincdn.com/CDN8152/dist/css/index-9948c2e.css"
+            "http://js.pre.meixincdn.com/CDN8152/dist/css/index-f0e550f.css"
         ],
         "js": [
             "http://js.pre.meixincdn.com/CDN8152/dist/js/vendor-26c6415.js",
