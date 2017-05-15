@@ -22,3 +22,4 @@ config/hash-map/
 dist/
 view/html/
 yarn.lock
+config/webpack/flame/.idea/
