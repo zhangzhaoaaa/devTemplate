@@ -11,6 +11,10 @@ module.exports = function (port) {
         dev: `http://js.dev.meixincdn.com:${port}`, //分支开发时,改新的地址,后续需要考虑flame本身的分支策略
         pre: 'http://js.pre.meixincdn.com',
         production: 'https://js.meixincdn.com',
+        hosts: {
+           pre: 'js.pre.meixincdn.com',
+           production: 'js.meixincdn.com'
+        },
         publicPath: {
             lcdev: `http://localhost:${port}${buildEnv.cdnenv}dist`,
             // dev: `http://js.dev.meixincdn.com${buildEnv.cdnenv}dist`,

@@ -9,7 +9,7 @@ const configFun = require('../webpack/common.conf.js');
 const env = require('../webpack/env.conf');
 const webpackConfig = require('../webpack/webpack.dev.conf.js');
 const { renderAll } = require('./view.js');
-
+const hostile = require('hostile');
 
 const compiler = webpack(webpackConfig);
 
@@ -23,6 +23,34 @@ if (env === 'lcdev' && port === 80) {
 }
 
 const config = configFun(port);
+
+
+if (env === 'pre' || env === 'production') {
+    hostile.remove('127.0.0.1', config['hosts'][env], function (err) {
+        if (err) {
+            console.error(err)
+        } else {
+            console.log('remove /etc/hosts successfully!')
+            hostile.set('127.0.0.1', config['hosts'][env], function (err) {
+                if (err) {
+                    console.error(err)
+                } else {
+                    console.log('set /etc/hosts successfully!')
+                }
+            });
+        }
+    });
+    process.on('SIGINT', function() {
+        hostile.remove('127.0.0.1', config['hosts'][env], function (err) {
+            if (err) {
+                console.error(err);
+            } else {
+                console.log('remove /etc/hosts successfully!');
+                process.exit();
+            }
+        });
+    });
+}
 
 const server = new WebpackDevServer(compiler, {
 	stats: 'none',
